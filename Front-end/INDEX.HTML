@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=""content="width=device-width, initial-scale=1.0">
+    <title>Case Agora</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+    
+        <header class="navbar">
+            <div class="logo">Buque</div>
+          <nav class="nav-links">
+        </header>
+       
+    <main>
+        <section class="botão_splash">
+            <form class="Formulário" action="url" method="post" > 
+
+                <!-- Campo: Cidade -->
+                 <div class="Formulário__Campo">
+                    <label class="Formulário__Label" for="Cidade">Cidade</label>
+                    <select class="formulario__select" name="cidade" id="cidade" required>
+                        <option value="">Selecione a cidade</option>
+                        <option value="sao_paulo">São Paulo</option>
+                        <option value="rio_de_janeiro">Rio de Janeiro</option>
+                        <option value="belo_horizonte">Belo Horizonte</option>
+                    </select>
+                 </div>
+
+                 <!-- Campo: data do casamento -->
+                <div class="formulario__campo formulario__campo--data">
+                    <label class="formulario__label" for="data_casamento">Data do Casamento:</label>
+                    <input class="formulario__input" type="date" name="data_casamento" id="data_casamento" required>
+                </div>
+
+                <!-- Campo : Noiva -->
+                <div class="formulario__campo formulario__campo--noivo-noiva">
+                    <label class="formulario__label" for="noivo_noiva">Noivo(a):</label>
+                    <select class="formulario__select" name="noivo_noiva" id="noivo_noiva" required>
+                        <option value="">Selecione</option>
+                        <option value="noivo">Noivo</option>
+                        <option value="noiva">Noiva</option>
+                    </select>
+                </div>
+
+                <!-- Campo : Botão ( Pesquisar somente quando os campos estão preenchidos) -->
+                 <div class="Formulário__Campo Formulário__Label Formulário__Ação">
+                    <button class="formulário__botão" type="submit" btn="Enviar">Enviar</button>
+                 </div>
+                 
+            </form>
+        </section>
+    </main>
+</body>
+</html>
